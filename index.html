@@ -1,1 +1,82 @@
-[object ArrayBuffer]
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Untitled</title>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<link rel="stylesheet" href="./style.css" type="text/css" />
+</head>
+<body>
+<form id="form">
+<div id="name-details">
+<input type="name" id="first-name" placeholder="First Name" required />
+<br />
+<input type="name" id="mid-name" placeholder="Middle Name" required />
+<br />
+<input type="name" id="last-name" placeholder="Last Name" required />
+
+<select id="gender" required>
+<option selected disabled>Select gender</option>
+<option> Male  </option>
+<option>Female  </option>
+<option>Other</option>
+</select>
+</div>
+
+
+
+<br />
+<div id="birth-details">
+<h3>Birth Date and Time: </h3>
+<label for="dob" id="birthDate">Birth Date :
+<input type="date" placeholder="yyyy-mm-dd" id="dob" required /></lable>
+<br />
+<label for="tob">Birth Time :
+<input type="time" id="tob" required /></label>
+<h3>Birth Place : </h3>
+<label for="birth-country">Country :
+<select id="birth-country" required>
+<option selected disabled>Select Country</option>
+</select>
+</label>
+
+
+<br />
+<label for="birth-state">State :
+<select id="birth-state" required>
+<option selected disabled>Select State</option>
+</select>
+</label>
+
+
+<br />
+<label>City :
+<select id="birth-city">
+<option selected disabled>Select City</option>
+</select>
+</label>
+</div>
+
+<button type="submit" id="send-btn">Send</button>
+</form>
+
+<div class="modal">
+<div class="container">
+<div id="loader"></div>
+<div id="confirm-details">
+Loading...
+</div>
+</div>
+
+</div>
+
+
+<script type=module src="./app.js">
+</script>
+
+
+
+</body>
+</html>
