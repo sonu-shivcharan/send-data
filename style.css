@@ -1,1 +1,91 @@
-[object ArrayBuffer]
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  font-family: 'Poppins', Sans-Serif;
+}
+#birth-details {
+  width: 100%;
+  border: 0px solid black;
+}
+#birth-details h3 {
+  text-align: left!important;
+}
+select {
+  width: 260px;
+  padding: 8px;
+  font-size: 15px;
+  border: 1px solid gray;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+}
+#form {
+  max-width: 460px;
+  margin: auto;
+  padding: 30px;
+  box-shadow: 0 0 20px #a3a3a3;
+}
+#name-details {
+  width: 100%;
+  margin: auto;
+}
+input {
+  max-width: 90%;
+  min-width: 260px;
+  padding: 8px 0 8px 10px;
+  margin: 10px;
+  background-color: #fff;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 16px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(10,10,10,0.8);
+  width: 0vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loader {
+  width: 30px;
+  height: 30px;
+  border: 5px solid transparent;
+  border-top: 5px solid red;
+  border-radius: 50%;
+  margin: 10px;
+}
+.spinner {
+  animation: spin 0.5s linear infinite;
+}
+.container {
+  background-color: #fff;
+  width: 250px;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px 2px #312e2e;
+}
+#confirm-details {
+
+}
+#send-btn {
+  padding: 5px;
+  width: 260px;
+  margin: 10px auto!important;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
