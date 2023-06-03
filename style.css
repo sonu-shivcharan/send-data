@@ -2,14 +2,6 @@
 * {
   font-family: 'Poppins', Sans-Serif;
 }
-body{
-  width:100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin:10px;
-}
 #birth-details {
   width: 100%;
   border: 0px solid black;
